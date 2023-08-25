@@ -1,2 +1,2 @@
-usb_cam
--DCATKIN_DEVEL_PREFIX=/home/uwe/jabra_180cam/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/uwe/jabra_180cam/catkin_ws/install -G Unix Makefiles
+jabra_usb_cam
+-DCATKIN_DEVEL_PREFIX=/home/arg/jabra_180cam/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/arg/jabra_180cam/catkin_ws/install -G Unix Makefiles

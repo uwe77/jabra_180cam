@@ -31,16 +31,16 @@ docker run \
     -e QT_X11_NO_MITSHM=1 \
     -e XAUTHORITY=$XAUTH \
     -v "$XAUTH:$XAUTH" \
-    -v "/home/$USER/jabra-180cam:/home/arg/jabra-180cam" \
+    -v "/home/$USER/jabra_180cam:/home/arg/jabra_180cam" \
     -v "/tmp/.X11-unix:/tmp/.X11-unix" \
     -v "/etc/localtime:/etc/localtime:ro" \
     -v "/dev:/dev" \
     -v "/var/run/docker.sock:/var/run/docker.sock" \
-    -w "/home/arg/jabra-180cam" \
+    -w "/home/arg/jabra_180cam" \
     --user "root:root" \
     --network host \
     --privileged \
     --security-opt seccomp=unconfined \
-    argnctu/jabra-180camera \
+    argnctu/jabra_usb_cam \
     $BASH_OPTION
 xhost -

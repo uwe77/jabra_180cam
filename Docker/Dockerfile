@@ -173,7 +173,7 @@ RUN rosdep update
 RUN apt-get update -y
 RUN echo "root ALL=(ALL)  ALL" >> /etc/sudoers \
     && echo "source /opt/ros/${ROS_DISTRO}/setup.bash" >> ${HOME}/.bashrc
-
+RUN apt-get install -y ros-melodic-usb-cam
 
 ##################################### setting #####################################
 RUN chown -R ${USER}:${USER} ${HOME}/
