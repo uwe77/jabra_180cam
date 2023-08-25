@@ -4,3 +4,4 @@ rm -rf ~/jabra_180cam/catkin_ws/build/
 rm -rf ~/jabra_180cam/catkin_ws/devel/
 # cd -C  catkin_ws
 catkin_make -C ~/jabra_180cam/catkin_ws
+source catkin_ws/devel/setup.bash
